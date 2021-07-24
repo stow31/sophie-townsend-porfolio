@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.homepage{
+    background-color: black;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.main-nav{
+    text-align: left;
+    background-color: lightgray;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding-left: 21px;
+    display: flex;
+    align-items: center;
+    height: 36px;
+    border-bottom: 1px black solid;
+}
+
+.main-nav > a{
+    padding: 0 10px;
+    margin-bottom: 3px;
+    color: black;
+}
+
+.computer-icon{
+    width:3%;
+    border-radius: 50%;
+    padding: 9px
+}
+
+.screen-div{
+    padding: 20px;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 0.3fr 4fr;
+    background-color: #ffe2e8;
+    width: 100vw;
+    height: 96vh;
+}
+
+.icon-list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.icon-section{
+    cursor: pointer;
+}
+
+.icon-section > img{
+    width: 60%
+}
+
+.icon-label{
+    background-color: rgba(184, 184, 184, 0.582);
+}
+
+.popup-div{
+    position: relative;
+}
+
+h1.heading{
+    color: #182B26
+}
+
+h2.pop-up-headers{
+    color: white;
+}
+
+.about-div{
+    width: 70%;
+    border-radius: 29px;
+    display: grid;
+    grid-template-columns: 1.2fr 4fr;
+    margin-left: 5%;
+    box-shadow: inset -1px 1px 2px #000, inset 1px -1px 2px #000, 4px 4px 2px rgb(0 0 0 / 20%);
+    opacity: 0;
+    transition: ease 0.5s;
+    background-color: #fff;
+    position: absolute;
+}
+
+.project-div{
+    width: 85%;
+    border-radius: 29px;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    margin-left: 5%;
+    box-shadow: inset -1px 1px 2px #000, inset 1px -1px 2px #000, 4px 4px 2px rgb(0 0 0 / 20%);
+    opacity: 0;
+    transition: ease 0.5s;
+    background-color: #fff;
+    position: absolute;
+    top: 16%;
+    left: 0%;
+}
+
+.skills-div{
+    width: 31%;
+    border-radius: 29px;
+    margin-left: 5%;
+    box-shadow: inset -1px 1px 2px #000, inset 1px -1px 2px #000, 4px 4px 2px rgb(0 0 0 / 20%);
+    opacity: 0;
+    transition: ease 0.5s;
+    background-color: #fff;
+    position: absolute;
+    top: 3%;
+    left: 32%;
+}
+
+.aside{
+    background: rgb(178,188,194);
+    background: linear-gradient(57deg, rgba(178,188,194,1) 37%, rgba(227,227,227,1) 111%);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-top-left-radius: 29px;
+    border-bottom-left-radius: 29px;
+    padding: 0 10px;
+}
+
+.aside > p {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.control-row{
+    width: 100%;
+    height: 20px;
+    margin: 18px 6px;
+}
+
+.exit-btn{
+    background-color: rgb(151, 0, 0);
+    border-radius: 50%;
+    border: 1px black solid;
+    height: 12px;
+    width: 12px;
+    cursor: pointer;
+}
+
+.body-div{
+    display: grid;
+    grid-template-rows: 0.1fr 4fr;
+    border-top-right-radius: 29px;
+    overflow: hidden;
+}
+
+.skills-body-div{
+    display: grid;
+    grid-template-rows: 0.1fr 3fr;
+    border-top-right-radius: 29px;
+    border-top-left-radius: 29px;
+    border-bottom-left-radius: 29px;
+    overflow: hidden;
+}
+
+.header-div{
+    background: rgb(52,52,52);
+    background: radial-gradient(circle, rgba(52,52,52,1) 11%, rgba(82,82,82,1) 35%, rgba(90,90,90,1) 45%, rgba(101,101,101,1) 97%);
+    height: 100%;
+    width: 100%;
+}
+
+.main-div{
+    padding: 30px;
+    max-height: 568px;
+    overflow: auto;
+}
+
+.profile-image{
+    border-radius: 50%;
+    width: 36%;
+}
+
+.profile-main > p {
+    text-align: left;
+}
+
+.experience-header{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+    text-align: left;
+    margin: auto;
+}
+
+.experience-header > img{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.experience-list{
+    text-align: left;
+}
+
+li{
+    padding: 10px 0;
+}
+
+.visable{
+    opacity: 100;
+    z-index: 2;
+}
+
+.hide{
+    display: none;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.tic-tac-toe-main, .l-bry-main, .portfolio-main, .bens-friend-main{
+    text-align:left;
+}
+
+.tic-tac-toe-main a, .l-bry-main a, .portfolio-main a, .bens-friend-main a{
+    margin: 0 10px;
+}
+
+.project-screenshots{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.skills-main-div{
+    text-align: left;
+}
