@@ -9,7 +9,12 @@ function FunFacts(){
 
     return(
         <div className={funFactClassName}>
-            <p>Write some fun facts</p>
+            <ul>
+                <li>I love spending time with my dog Benson.</li>
+                <li>I enjoy swimming, cycling, rowing and pilates.</li>
+                <li>I spend a lot of my spare time reading, my favourite books include The Harry Potter Series, Taylor Jenkins Reid books and On The Jellicoe Road.</li>
+                <li>My guilty pleasure is reality TV shows (anything Bravo).</li>
+            </ul>
         </div>
     )
 }

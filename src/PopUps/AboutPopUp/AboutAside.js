@@ -13,7 +13,7 @@ function AboutAside(){
     } = useContext(PortfolioContext)
 
     const handleAboutHide = () =>{
-        if( isAboutVisable === 'about-div visable' ){
+        if( isAboutVisable === 'about-div visable' || isAboutVisable === 'about-div visable bring-front'){
             setAboutVisable("about-div")
         }
     }

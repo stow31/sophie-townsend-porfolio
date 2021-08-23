@@ -9,7 +9,17 @@ function Education(){
 
     return(
         <div className={educationClassName}>
-            <p>Education</p>
+
+            <div className="qualification">
+                <h3>Software Engineering Immersive</h3>
+                <p>2021 General Assembly</p>
+            </div>
+
+            <div className="qualification">
+                <h3>Bachelor of Science | Environmental Science</h3>
+                <p> 2017 University of Sydney</p>
+            </div>
+
         </div>
     )
 }

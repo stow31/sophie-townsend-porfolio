@@ -98,11 +98,11 @@ h2.pop-up-headers{
     background-color: #fff;
     position: absolute;
     top: 16%;
-    left: 0%;
+    left: 3%;
 }
 
 .skills-div{
-    width: 31%;
+    width: 50%;
     border-radius: 29px;
     margin-left: 5%;
     box-shadow: inset -1px 1px 2px #000, inset 1px -1px 2px #000, 4px 4px 2px rgb(0 0 0 / 20%);
@@ -213,6 +213,10 @@ li{
     display: none;
 }
 
+.bring-front{
+    z-index: 4;
+}
+
 .bold{
     font-weight: 700;
 }
@@ -223,6 +227,7 @@ li{
 
 .tic-tac-toe-main a, .l-bry-main a, .portfolio-main a, .bens-friend-main a{
     margin: 0 10px;
+    color: black;
 }
 
 .project-screenshots{
@@ -233,3 +238,16 @@ li{
 .skills-main-div{
     text-align: left;
 }
+
+.education-main {
+    text-align: left;
+}
+
+.education-main .qualification{
+    padding: 5px 0;
+}
+
+.fun-facts-main {
+    text-align: left;
+}
+

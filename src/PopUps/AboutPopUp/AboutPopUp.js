@@ -9,12 +9,31 @@ import { PortfolioContext } from '../../PortfolioContext.js'
 function AboutPopUp(){
 
     const {
-        isAboutVisable
+        isAboutVisable,
+        setAboutVisable,
+        isProjectVisable,
+        setProjectVisable,
+        isSkillsVisable,
+        setSkillsVisable
     } = useContext(PortfolioContext)
 
+    const handleAboutClick = () =>{
+        if(isAboutVisable === 'about-div visable'){
+
+            setAboutVisable("about-div visable bring-front")
+
+            if (isProjectVisable.includes("bring-front")){
+                setProjectVisable(isProjectVisable.replace("bring-front", "").trim())
+            }
+
+            if (isSkillsVisable.includes("bring-front")){
+                setSkillsVisable(isSkillsVisable.replace("bring-front", "").trim())
+            }
+        }
+    }
 
     return(
-        <div className={isAboutVisable}>
+        <div onClick={handleAboutClick} className={isAboutVisable}>
             <AboutAside />
             <div className="body-div">
                 <div className="header-div">

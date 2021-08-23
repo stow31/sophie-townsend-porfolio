@@ -16,29 +16,51 @@ function IconList(){
     } = useContext(PortfolioContext)
 
     const handleAboutVisable = () =>{
-        if( isAboutVisable === 'about-div' ){
-            setAboutVisable("about-div visable")
-        } else {
-            setAboutVisable("about-div")
-        }
+        if( isAboutVisable === 'about-div' || isAboutVisable === 'about-div visable'){
+
+            setAboutVisable("about-div visable bring-front")
+
+            if (isProjectVisable.includes("bring-front")){
+                setProjectVisable(isProjectVisable.replace("bring-front", "").trim())
+            }
+
+            if (isSkillsVisable.includes("bring-front")){
+                setSkillsVisable(isSkillsVisable.replace("bring-front", "").trim())
+            }
+        } 
     }
 
     const handleProjectsVisable = () =>{
-        if( isProjectVisable === 'project-div' ){
-            setProjectVisable("project-div visable")
-        } else {
-            setProjectVisable("project-div")
-        }
+        if( isProjectVisable === 'project-div' || isProjectVisable === 'project-div visable'){
+
+            setProjectVisable("project-div visable bring-front")
+
+            if (isSkillsVisable.includes("bring-front")){
+                setSkillsVisable(isSkillsVisable.replace("bring-front", "").trim())
+            }
+
+            if (isAboutVisable.includes("bring-front")){
+                setAboutVisable(isAboutVisable.replace("bring-front", "").trim())
+            }
+
+        } 
     }
 
     const handleSkillsVisable = () =>{
-        if( isSkillsVisable === 'skills-div' ){
-            setSkillsVisable("skills-div visable")
-        } else {
-            setSkillsVisable("skills-div")
-        }
-    }
+        if( isSkillsVisable === 'skills-div' || isSkillsVisable === 'skills-div visable'){
 
+            setSkillsVisable("skills-div visable bring-front")
+
+            if (isProjectVisable.includes("bring-front")){
+                setProjectVisable(isProjectVisable.replace("bring-front", "").trim())
+            }
+
+            if (isAboutVisable.includes("bring-front")){
+                setAboutVisable(isAboutVisable.replace("bring-front", "").trim())
+            }
+
+        } 
+    }
 
     return (
         <div className="icon-list">
