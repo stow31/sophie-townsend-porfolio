@@ -11,6 +11,25 @@ function WorkExperience(){
         <div className={workExperienceClassName}>
             <section className="experience-section">
                 <div className="experience-header">
+                    <img className="experience-logo" src="https://unglobalcompact.org.au/wp-content/uploads/2020/04/Stockland.png" alt="" />
+                    <div className="experience-heading">
+                        <h3>JUNIOR FULL STACK DEVELOPER</h3>
+                        <p>Stockland</p>
+                        <p>2021 - current</p>
+                    </div>
+                </div>
+
+                <ul className="experience-list">
+                    <li>Delivering high quality software solutions in the iterative development process of the Website and innovative applications</li>
+                    <li>Solve technical problems, identify root causes and quickly resolve issues</li>
+                    <li>Conduct testing and QA</li>
+                    <li>Participating in development and running of automation test cases</li>
+                    <li>Ensuring all documentation (e.g. requirements, design, testing, operations, interface, user guide, etc.) is developed & maintained </li>
+                </ul>
+            </section>
+            
+            <section className="experience-section">
+                <div className="experience-header">
                     <img className="experience-logo" src="https://www.thedailyedited.com/static/version1581648374/frontend/MindArc/tde2/en_AU/images/tde-black-logo.png" alt="" />
                     <div className="experience-heading">
                         <h3>TECHNICAL PROJECT MANAGER</h3>

@@ -13,8 +13,8 @@ function ProjectPortfolio(){
     return(
         <div className={portfolioClassName}>
             <h3>jgrs Porfolios</h3>
-            <a href="https://jgrs-portfolios.herokuapp.com/">[open app]</a>
-            <a href="https://github.com/stow31/portfolio_app">[github]</a>
+            <a target="_blank" href="https://jgrs-portfolios.herokuapp.com/">[open app]</a>
+            <a target="_blank" href="https://github.com/stow31/portfolio_app">[github]</a>
             <ul>
                 <li>Sample Login Details
                     <ul>

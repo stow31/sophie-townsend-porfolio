@@ -12,8 +12,8 @@ function ProjectBensFriend(){
     return(
         <div className={bensFriendClassName}>
             <h3>Bens's Friend</h3>
-            <a href="http://bensfriend.surge.sh/">[open app]</a>
-            <a href="https://github.com/stow31/bens-friend">[github]</a>
+            <a target="_blank" href="http://bensfriend.surge.sh/">[open app]</a>
+            <a target="_blank" href="https://github.com/stow31/bens-friend">[github]</a>
             <ul>
                 <li>
                     Create and look after your own pet! Maintain your pets health by taking it to the bathroom, feeding it, putting it to bed and playing with it. If your pets health gets too low it may die so make sure you are responsible and give it all the love and care it needs! 

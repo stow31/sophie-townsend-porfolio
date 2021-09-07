@@ -13,8 +13,8 @@ function ProjectLBry(){
     return(
         <div className={lBryClassName}>
             <h3>L-Bry</h3>
-            <a href="https://ancient-stream-85049.herokuapp.com/">[open app]</a>
-            <a href="https://github.com/stow31/l-bry">[github]</a>
+            <a target="_blank" href="https://ancient-stream-85049.herokuapp.com/">[open app]</a>
+            <a target="_blank" href="https://github.com/stow31/l-bry">[github]</a>
             <ul>
                 <li>Sample Login Details
                     <ul>
