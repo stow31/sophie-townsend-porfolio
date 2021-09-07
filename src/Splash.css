@@ -314,6 +314,11 @@ li{
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 500px){
+
+    .computer-icon{
+        width: 8%;
+        padding: 0px;
+    }
         
     .screen-div{
         grid-template-rows: 4fr 0.3fr;
@@ -333,9 +338,12 @@ li{
     }
 
     .about-div, .project-div, .skills-div{
-        height: 90%;
+        height: 92%;
+        grid-template-columns: 1.9fr 4fr;
         width: 100%;
         margin-left: 0;
+        top: 0%;
+        left: 0%;
     }
 
     .skills-body-div{
@@ -346,10 +354,11 @@ li{
         height: 100%;
     }
 
-    .about-div{
-        height: 80%;
+    .experience-header{
+        display: block;
     }
-    }
+
+}
 
 
 
