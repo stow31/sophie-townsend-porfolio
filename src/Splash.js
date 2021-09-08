@@ -12,8 +12,6 @@ function Splash(){
         <div className="homepage">
             <div className="crt">
                 <div className="scanline"></div>
-                <div id="second" className="scanline"></div>
-                <div id="third" className="scanline"></div>
 
                 <nav className="main-nav">
                     <img className="computer-icon" src={userIcon} alt="User Icon" />
