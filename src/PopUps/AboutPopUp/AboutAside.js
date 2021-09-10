@@ -9,7 +9,8 @@ function AboutAside(){
         setProfileClassName,
         setworkExperienceClassName,
         setFunFactClassName,
-        setEducationClassName
+        setEducationClassName,
+        aboutMainDivRef
     } = useContext(PortfolioContext)
 
     const handleAboutHide = () =>{
@@ -40,7 +41,14 @@ function AboutAside(){
             setworkExperienceClassName('work-experience-main hide')
             setFunFactClassName('fun-facts-main hide')
         }
+
+        scrollToTop()
     }
+
+    const scrollToTop = () => {
+        aboutMainDivRef.current.scrollTo(0, 0)
+    }   
+
 
     return (
         <div className="aside">

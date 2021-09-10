@@ -9,7 +9,8 @@ function ProjectAside() {
         setTicTacToeClassName,
         setLBryClassName,
         setPortfolioClassName,
-        setBensFriendClassName
+        setBensFriendClassName,
+        projectMainDivRef
     } = useContext(PortfolioContext)
 
     const handleProjectHide = () =>{
@@ -40,7 +41,13 @@ function ProjectAside() {
             setPortfolioClassName('portfolio-main hide')
             setBensFriendClassName('bens-friend-main')
         }
+
+        scrollToTop()
     }
+
+    const scrollToTop = () => {
+        projectMainDivRef.current.scrollTo(0, 0)
+    }   
 
     return (
         <div className="aside">

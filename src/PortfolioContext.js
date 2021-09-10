@@ -15,6 +15,8 @@ export function PortfolioProvider(props){
     const [ portfolioClassName, setPortfolioClassName ] = useState("portfolio-main hide")
     const [ bensFriendClassName, setBensFriendClassName ] = useState("bens-friend-main hide")
     const [isSkillsVisable, setSkillsVisable] = useState("skills-div")
+    const [projectMainDivRef, setPortfolioMainDivRef] = useState(React.createRef())
+    const [aboutMainDivRef, setAboutMainDivRef] = useState(React.createRef())
 
     return <PortfolioContext.Provider value={{
         isAboutVisable,
@@ -38,7 +40,9 @@ export function PortfolioProvider(props){
         isSkillsVisable,
         setSkillsVisable,
         educationClassName, 
-        setEducationClassName
+        setEducationClassName,
+        aboutMainDivRef,
+        projectMainDivRef
         }}>
         {props.children}
     </PortfolioContext.Provider>

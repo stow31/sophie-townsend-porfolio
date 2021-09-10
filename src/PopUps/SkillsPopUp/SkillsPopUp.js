@@ -41,7 +41,7 @@ function SkillsPopUp(){
                     <div className="control-row">
                         <div onClick={handleSkillsHide} className="exit-btn"></div>
                     </div>
-                    <h2 class="pop-up-headers">Skills</h2>
+                    <h2 className="pop-up-headers">Skills</h2>
                 </div>
                 <div className="skills-main-div">
                     <ul>

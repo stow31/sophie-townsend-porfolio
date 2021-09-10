@@ -14,7 +14,8 @@ function AboutPopUp(){
         isProjectVisable,
         setProjectVisable,
         isSkillsVisable,
-        setSkillsVisable
+        setSkillsVisable,
+        aboutMainDivRef
     } = useContext(PortfolioContext)
 
     const handleAboutClick = () =>{
@@ -37,9 +38,9 @@ function AboutPopUp(){
             <AboutAside />
             <div className="body-div">
                 <div className="header-div">
-                    <h2 class="pop-up-headers">About Me</h2>
+                    <h2 className="pop-up-headers">About Me</h2>
                 </div>
-                <div className="main-div">
+                <div ref={aboutMainDivRef} className="main-div">
                     <Profile />
                     <WorkExperience />
                     <Education />
