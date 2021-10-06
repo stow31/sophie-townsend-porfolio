@@ -1,6 +1,6 @@
 # My Portfolio
 
-Website URL: https://starwarsapi_townsend.surge.sh/
+Website URL: http://sophietownsend.com.au/
 
 Built using React.
 
